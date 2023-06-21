@@ -29,6 +29,24 @@
 			echo $sum;
 			
 			echo '<br>----<br>';
+			
+			// porovnani cisel
+			$number_1 = 50;
+			$number_2 = 10;
+			if ($number_1 > $number_2)
+			{
+				echo 'Prvni cislo je vetsi.';
+			}
+			else if ($number_1 < $number_2)
+			{
+				echo 'Druhe cislo je vetsi.';
+			}
+			else
+			{
+				echo 'Obe cisla se rovnaji';
+			}
+			
+			echo '<br>----<br>';
 		?>
 </body>
 </html>
