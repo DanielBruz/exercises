@@ -22,7 +22,7 @@
 			$item_price = 350;
 			
 			// vynasobime je a vysledek ulozime do promenne $sum
-			$sum = $item_count * $item
+			$sum = $item_count * $item;
 
 
 		
