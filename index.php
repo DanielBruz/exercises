@@ -87,6 +87,11 @@
 			echo '<p>';
 			echo '<br>----<br>';
 
+			// Vypis slozitejsiho stringu
+			echo "I\'m";
+
+			echo '<br>----<br>';
+
 		?>
 </body>
 </html>
