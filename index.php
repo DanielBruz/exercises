@@ -68,6 +68,25 @@
 			}
 
 			echo '<br>----<br>';
+
+			// Porovnani s minimalnim cislem
+			$number = 8;
+			$min = 6;
+			if ($number > $min)
+			{
+				echo 'Cislo je <strong>vyssi</strong> nez minimum.';
+			}
+			else if ($number < $min)
+			{
+				echo 'Cislo je <strong>nizsi</strong> nez minimum.';
+			}
+			else
+			{
+				echo 'Obe cisla <strong>se rovnaji.</strong>';
+			}
+			echo '<p>';
+			echo '<br>----<br>';
+
 		?>
 </body>
 </html>
