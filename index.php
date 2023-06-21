@@ -20,7 +20,9 @@
 			// ulozime hodnoty do promennych
 			$item_count = 5;
 			$item_price = 350;
-
+			
+			// vynasobime je a vysledek ulozime do promenne $sum
+			$sum = $item_count * $item_price;
 
 
 
