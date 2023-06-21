@@ -17,7 +17,9 @@
 
 	</div>
 		<?php
-		
+			// ulozime hodnoty do promennych
+			$item_count = 5;
+			$item_price = 350;
 
 
 
