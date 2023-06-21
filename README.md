@@ -1,2 +1,3 @@
 # exercises
-# practising Git Hub and PHP
+
+My practising Git Hub and PHP
