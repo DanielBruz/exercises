@@ -92,6 +92,10 @@
 
 			echo '<br>----<br>';
 
+			//String s promennymi
+			echo "Koupil jsi <strong>$item_count</strong> polozek za <strong>{$sum}$</strong>";   
+
+			echo '<br>----<br>';
 		?>
 </body>
 </html>
