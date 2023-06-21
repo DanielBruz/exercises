@@ -23,6 +23,12 @@
 			
 			// vynasobime je a vysledek ulozime do promenne $sum
 			$sum = $item_count * $item_price;
+
+			// promennou $sum vypiseme na stranku
+			// na strance se objevi cislo
+			echo $sum;
+			
+			echo '<br>----<br>';
 		?>
 </body>
 </html>
