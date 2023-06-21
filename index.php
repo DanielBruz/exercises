@@ -47,6 +47,27 @@
 			}
 			
 			echo '<br>----<br>';
+			
+			// porovnani stringu
+			$word_1 = 'aaaaa';
+			$word_2 = 'aaaaaaaa';
+			$length_word_1 = strlen($word_1);
+			$length_word_2 = strlen($word_2);
+
+			if ($length_word_1 > $length_word_2)
+			{
+				echo 'Prvni slovo je delsi.';
+			}
+			else if ($length_word_1 < $length_word_2)
+			{
+				echo 'Druhe slovo je delsi.';
+			}
+			else
+			{
+				echo 'Obe slova jsou stejne dlouha.';
+			}
+
+			echo '<br>----<br>';
 		?>
 </body>
 </html>
