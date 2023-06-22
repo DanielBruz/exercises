@@ -81,4 +81,108 @@
 			echo "Koupil jsi <strong>$item_count</strong> polozek za <strong>{$sum}$</strong>";   
 
 			echo '<br>----<br>';
+
+			// Pole
+
+// array_push
+// array_unshift
+// array_pop
+// array_shift
+// print_r
+// echo '<pre>'
+// count($arr)
+// sort($arr)
+// rsort($arr)
+
+
+			$badass = 'Brienne of Tarth';
+
+			$arr = array(
+				"Princes Bubblegum",
+				"Imperator Furiosa",
+				$badass,
+				"Bulbasaur"
+			);
+
+			echo '<pre>';
+			print_r ( $arr );
+			echo '</pre>';
+
+			foreach ($arr as $value) {
+				
+
+
+
+			}
+
+
+
+
+			echo '<br>----<br>';
+
+			echo count($arr);
+
+			echo '<br>----<br>';
+
+			if (count($arr))
+			{
+				echo '<pre>';
+				print_r ( $arr[3] );
+				echo '</pre>';
+			}
+			else
+			{
+				echo 'nothing in array';
+			}
+
+			echo '<br>----<br>';
+			
+			rsort($arr);
+			echo '<pre>';
+			print_r ( $arr );
+			echo '</pre>';
+
+			echo '<br>----<br>';
+
+			$arr[] = 'Kamala Khan';
+			array_push($arr, 'Lyra Belacqua', 'Aprial Ryan');
+
+			echo '<pre>';
+			print_r ( $arr );
+			echo '</pre>';
+
+			echo '<br>----<br>';
+
+			$who = array_pop( $arr) ;
+						
+			echo '<pre>';
+			print_r ( $arr );
+			echo '</pre>' . '<br>';
+
+			echo $who;
+
+			echo '<br>----<br>';
+
+			$who = array_shift( $arr) ;
+						
+			echo '<pre>';
+			print_r ( $arr );
+			echo '</pre>' . '<br>';
+
+			echo $who;
+
+			$asshole = 'Donald Trump';
+			array_unshift($arr, $asshole);
+			echo '<pre>';
+			print_r ( $arr );
+			echo '</pre>' . '<br>';
+			echo '<br>----<br>';
+
+
+
+
+
+
+
+
 		?>
