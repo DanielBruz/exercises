@@ -33,7 +33,7 @@
 			
 			echo '<br>----<br>';
 			
-			// porovnani stringu
+			// porovnani stringu - funkce strlen()
 			$word_1 = 'aaaaa';
 			$word_2 = 'aaaaaaaa';
 			$length_word_1 = strlen($word_1);
@@ -56,7 +56,7 @@
 
 			// Porovnani s minimalnim cislem
 			$number = 8;
-			$min = 6;
+			$min = 8;
 			if ($number > $min)
 			{
 				echo 'Cislo je <strong>vyssi</strong> nez minimum.';
@@ -84,15 +84,16 @@
 
 			// Pole
 
-// array_push
-// array_unshift
-// array_pop
-// array_shift
-// print_r
-// echo '<pre>'
-// count($arr)
-// sort($arr)
-// rsort($arr)
+	//	 array_push
+	// 	 array_unshift
+	// 	 array_pop
+	// 	 array_shift
+	//	 print_r
+	// 	 echo '<pre>'
+	// 	 count($arr)
+	// 	 sort($arr)
+	// 	 rsort($arr)
+	//	 natsort($arr)
 
 
 			$badass = 'Brienne of Tarth';
@@ -108,16 +109,6 @@
 			print_r ( $arr );
 			echo '</pre>';
 
-			foreach ($arr as $value) {
-				
-
-
-
-			}
-
-
-
-
 			echo '<br>----<br>';
 
 			echo count($arr);
@@ -127,7 +118,7 @@
 			if (count($arr))
 			{
 				echo '<pre>';
-				print_r ( $arr[3] );
+				print_r ( $arr[3][5] );
 				echo '</pre>';
 			}
 			else
@@ -137,14 +128,18 @@
 
 			echo '<br>----<br>';
 			
-			rsort($arr);
+			sort($arr);
+
 			echo '<pre>';
 			print_r ( $arr );
 			echo '</pre>';
 
 			echo '<br>----<br>';
 
+
+			// prázdný index pole zařadí další položku na konec pole
 			$arr[] = 'Kamala Khan';
+			// doplní k poli další dvě položky na konec pole
 			array_push($arr, 'Lyra Belacqua', 'Aprial Ryan');
 
 			echo '<pre>';
@@ -153,17 +148,18 @@
 
 			echo '<br>----<br>';
 
-			$who = array_pop( $arr) ;
+			// smaže poslední položku pole a uloží jí do $who
+			$who = array_pop( $arr );
 						
 			echo '<pre>';
 			print_r ( $arr );
 			echo '</pre>' . '<br>';
-
 			echo $who;
 
 			echo '<br>----<br>';
 
-			$who = array_shift( $arr) ;
+			// smaže první položku pole a uloží jí do proměnné. Pole přeindexuje opět od nuly.
+			$who = array_shift( $arr);
 						
 			echo '<pre>';
 			print_r ( $arr );
@@ -171,8 +167,10 @@
 
 			echo $who;
 
+			// doplní položku na začátek pole a přeindexuje pole opět od nuly.
 			$asshole = 'Donald Trump';
 			array_unshift($arr, $asshole);
+
 			echo '<pre>';
 			print_r ( $arr );
 			echo '</pre>' . '<br>';
